@@ -1,0 +1,243 @@
+body {
+    background-color: #f4f4f4; /* Fixing 'al' to a valid color */
+    align-items: center;
+}
+
+ 
+
+* {
+    box-sizing: border-box;
+}
+
+#slider img {
+    outline: 13.5px solid white;
+    outline-offset: -13.5px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+a {
+    transition: ease 0.2s;
+}
+ header {
+   background-color: #F6D4F5;
+   height: 15rem;
+   margin-bottom: 2rem;
+  
+ }
+
+
+.container {
+
+    width: 70%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header img {
+
+    width: 30%;
+    height: auto;
+}
+
+ 
+
+
+.topbar small {
+   position: absolute;
+   margin-top: 14rem;
+   left: 41.5%;
+}
+
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: auto;
+    margin-top: 2rem;
+    color: black;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #908f90;
+}
+
+#slider {
+    position: relative; /* Necessary for absolute positioning of children */
+}
+
+#slider h2 {
+    position: absolute;
+
+    top: 0; /* You can adjust this to move the text down or up */
+    left: 20px; /* This moves the text slightly from the left edge */
+    background-color: rgba(246, 212, 245, 0.8);
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#slider, #select, #new, #best, #crush {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#select {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    margin: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 4rem;
+    flex-wrap: wrap;
+    transition: opacity 0.2s ease;
+}
+
+#select .escarpin {
+    text-align: center;
+    width: 5rem;
+    margin-left: 2.8rem;
+   
+}
+
+#select .escarpin img {
+  margin-left: auto;
+  margin-right: 15rem;
+}
+#select h1 {
+   width: 100%;
+   text-align: left;
+   margin-bottom: 1rem;
+
+ }
+
+#select:hover {
+    opacity: 0.5;
+}
+
+#select .escarpin:hover {
+    opacity: 1;
+    transform: opacity 0.2s ease;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+h3 {
+    font-family: 'Courgette', cursive;
+}
+
+#crush h2{
+   background-color: rgb(27, 137, 129);
+   padding: 1rem;
+
+}
+
+#best h2 {
+   background-color: greenyellow;
+   padding: 1rem;
+}
+
+
+
+#news {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#news img {
+    display: block;
+    margin: 0 auto;
+}
+
+#news h3 {
+    display: flex;
+    justify-content: center;
+}
+
+#news small {
+    display: flex;
+    justify-content: center;
+}
+
+#new h2 {
+    background-color: rgb(184, 22, 146);
+    padding: 1rem;
+}
+
+
+#news > article {
+    flex: 1 1 30%;
+    min-width: 250px;
+}
+
+section #info {
+   background-color: rgb(94, 46, 54);
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: #b185c0;
+    gap: 12rem;
+    height: 5.5rem;
+}
+
+ #bottombar {
+    display: flex;
+    justify-content: center;
+    background-color: #F6D4F5;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#info article:hover {
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+
+    #select, #news, #info, #bottombar {
+        flex-direction: column;
+    }
+
+    #cart {
+        display: none;
+    }
+}
+ 
