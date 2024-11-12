@@ -181,6 +181,14 @@ h3 {
     flex-wrap: wrap;
 }
 
+ul {
+    line-height: 2rem;
+}
+
+li {
+    transform: none$;
+}
+
 #news img {
     display: block;
     margin: 0 auto;
@@ -223,7 +231,7 @@ section #info {
 
  #bottombar {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #F6D4F5;
     gap: 20px;
     flex-wrap: wrap;
