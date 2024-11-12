@@ -20,10 +20,16 @@ a {
 }
  header {
    background-color: #F6D4F5;
-   height: 15rem;
+   /*height: 15rem;*/
    margin-bottom: 2rem;
   
  }
+
+ header .container {
+    padding-top: 2rem;
+    
+ }
+
 
 
 .container {
@@ -37,15 +43,19 @@ header img {
 
     width: 30%;
     height: auto;
+    margin-bottom: 2rem;
 }
 
  
 
 
-.topbar small {
+.topbar {
    position: absolute;
-   margin-top: 14rem;
-   left: 41.5%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   width: 100%;
+   
 }
 
 
@@ -74,13 +84,14 @@ nav {
 nav a {
     text-decoration: none;
     margin: auto;
-    margin-top: 2rem;
     color: black;
     transition: color 0.2s ease;
+    padding: 1rem;
 }
 
 nav a:hover {
-    color: #908f90;
+    background-color: black;
+    color: white;
 }
 
 #slider {
@@ -229,7 +240,7 @@ section #info {
         width: 100%;
     }
 
-    #select, #news, #info, #bottombar {
+    #select, #news, #info, #bottombar, nav {
         flex-direction: column;
     }
 
